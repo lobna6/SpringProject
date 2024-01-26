@@ -5,7 +5,6 @@ import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.Set;
 
-enum TypeChambre{SIMPLE,DOUBLE,TRIPLE}
 
 @Entity
 @Table( name = "Chambre")
