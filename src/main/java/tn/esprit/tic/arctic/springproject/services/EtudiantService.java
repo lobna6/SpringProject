@@ -1,11 +1,13 @@
 package tn.esprit.tic.arctic.springproject.services;
 
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 import tn.esprit.tic.arctic.springproject.entities.Etudiant;
 import tn.esprit.tic.arctic.springproject.repository.EtudiantRepository;
 
 import java.util.List;
-
-
+@Service
+@AllArgsConstructor
 public class EtudiantService implements IEtudiantService {
     EtudiantRepository er;
     @Override
