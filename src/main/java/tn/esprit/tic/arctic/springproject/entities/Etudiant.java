@@ -1,6 +1,10 @@
 package tn.esprit.tic.arctic.springproject.entities;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -8,6 +12,10 @@ import java.util.Set;
 
 
 @Entity
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
     @Table( name = "Etudiant")
     public class Etudiant implements Serializable {
         @Id
