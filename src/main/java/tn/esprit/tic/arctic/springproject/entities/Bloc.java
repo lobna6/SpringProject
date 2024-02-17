@@ -28,7 +28,7 @@ public class Bloc implements Serializable {
     @ManyToOne
     Foyer foyer;
 
-    @OneToMany(mappedBy="bloc")
+    @OneToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL,mappedBy="bloc")
     private Set<Chambre> chambres;
 
 // Constructeur et accesseurs (getters) et mutateurs (setters)
