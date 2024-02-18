@@ -12,5 +12,6 @@ public interface ChambreRepository extends JpaRepository <Chambre,Long> {
     List<Chambre> findByReservationsEstValide (Boolean estValide);
     List<Chambre> findByBlocIdBlocAndCapaciteBlocGreaterThan (Long idBloc, Long capaciteBloc);
 
-
+   List<Chambre> findByBloc_NomBloc( String nomBloc );
+    Chambre findByNumeroChambre(Long aLong);
 }

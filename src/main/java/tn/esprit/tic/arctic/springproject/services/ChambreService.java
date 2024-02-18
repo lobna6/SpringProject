@@ -34,4 +34,10 @@ public class ChambreService implements IChambreService{
         });
 
     }
+    @Override
+    public List<Chambre> getChambresParNomBloc ( String nomBloc){
+        return cr.findByBloc_NomBloc(nomBloc);
+    }
+
 }
+

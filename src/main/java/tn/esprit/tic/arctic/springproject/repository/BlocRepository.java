@@ -8,4 +8,6 @@ import java.util.List;
 @Repository
 public interface BlocRepository extends JpaRepository <Bloc,Long> {
     List<Bloc> findByFoyerUniversiteIdUniversite (Long idUniversite);
+
+    Bloc findByNomBloc(String nomBloc);
 }
